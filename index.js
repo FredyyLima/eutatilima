@@ -28,7 +28,7 @@ app.use(express.urlencoded());
 // Adicionando a const port e uma arow function de callback para mostrar no console que o servidor está rodando.
 
 
-app.use(express.static(path.join(__dirname, "assets")));
+app.use(express.static(path.join(__dirname, "assets/views")));
 
 // Liga o servidor na porta 3000
 //app.listen(3000);
