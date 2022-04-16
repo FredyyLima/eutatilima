@@ -1,1 +1,1 @@
-web: node index.php
+web: npm start index.php
