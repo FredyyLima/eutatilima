@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -390,10 +390,10 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes pulse {
   
   from{
-    transform: perspective(30px) translateZ(10px);
+    transform: scale(0.6,0.6);
   }
   to{
-    transform: perspective(30px) translateZ(5px);
+    transform: scale(1,1);
   }
 }
 
