@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -37,22 +38,24 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #7cc576;
+  background: #890381;
   width: 40px;
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
-.back-to-top i {
+.back-to-top i{
   font-size: 28px;
-  color: #fff;
+  color: rgb(228, 182, 14);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #97d193;
-  color: #fff;
+  background: rgb(228, 182, 14);
+}
+.back-to-top:hover i{
+  color: #890381;
 }
 
 .back-to-top.active {
@@ -68,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     transition-delay: 0 !important;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Header
@@ -383,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
   color: rgb(228, 182, 14);
   background: #890381;
-  animation: pulse 1.3s infinite alternate;
+  animation: pulse 0.7s infinite alternate;
   animation-timing-function: ease;
 }
 
@@ -393,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1,1);
   }
   to{
-    transform: scale(0.6,0.6);
+    transform: scale(0.9,0.9);
   }
 }
 
@@ -488,13 +492,32 @@ section {
   margin-bottom: 0;
 }
 
+.container2{
+  text-align:center;
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services{
+  background:url("../img/hero-bg.png");
+}
+
+.services h2{
+  color:#ffffff;
+
+}
+
+.services h3{
+  color:#890381;
+
+}
 .services .icon-box h4 {
   font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10px 60px;
+  margin: 5px 0 10px 0px;
+  color: #ffffff;
+  text-align: center;
 }
 
 .services .icon-box i {
@@ -506,7 +529,7 @@ section {
 .services .icon-box p {
   font-size: 15px;
   color: #959595;
-  margin-left: 60px;
+  margin-left: 0px;
 }
 
 .services .image {
@@ -591,6 +614,7 @@ section {
 
 .why-us .content {
   padding: 60px 100px 0 100px;
+  text-align: center;
 }
 
 .why-us .content h3 {
@@ -617,6 +641,14 @@ section {
   position: relative;
 }
 
+#imgTati{
+  display: flex;
+  justify-content: center;
+  border-radius: 80px;
+}
+#imgTati2{
+  border-radius: 80px;
+}
 .why-us .accordion-list {
   padding: 0 100px 60px 100px;
 }
@@ -1065,8 +1097,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
+  width: 60vw;
+  height: auto;
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
@@ -1146,6 +1178,13 @@ section {
 .team {
   background: #fff;
   padding: 60px 0;
+
+}
+
+.containerTeam{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .team .member {
@@ -1173,6 +1212,31 @@ section {
   justify-content: center;
 }
 
+#tatiTitulo{
+  color: #890381;
+}
+
+#tatiTitulo2{
+  color: rgb(228, 182, 14);
+}
+.member-img{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#quemTati{
+  border-radius: 250px;
+}
+
+.social{
+  width:300px;
+  display:flex;
+  justify-content: center;
+  position: absolute;
+}
+
+
 .team .member .social a {
   transition: color 0.3s;
   color: rgba(255, 255, 255, 0.7);
@@ -1199,6 +1263,7 @@ section {
   font-weight: 700;
   margin: 15px 0 5px 0;
   font-size: 18px;
+  text-align: center;
 }
 
 .team .member .member-info span {
@@ -1215,6 +1280,7 @@ section {
   font-size: 14px;
   line-height: 26px;
   color: #888888;
+  text-align: center;
 }
 
 .team .member:hover .social {
@@ -1223,9 +1289,31 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
+.member-info{
+  margin-left: 5px;
+  margin-right: 5px;
+}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing{
+  background:url("../img/hero-bg.png");
+}
+
+.containerGarantia{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerGarantia h2{
+  color: #ffffff;
+}
+
+.containerGarantia span{
+  color: #890381;
+}
 .pricing .box {
   padding: 20px;
   background: #fff;
@@ -1298,8 +1386,8 @@ section {
   display: inline-block;
   padding: 10px 40px 12px 40px;
   border-radius: 5px;
-  border: 2px solid #7cc576;
-  color: #7cc576;
+  border: 2px solid #890381;
+  color: #890381;
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -1307,7 +1395,7 @@ section {
   transition: 0.3s;
 }
 
-.pricing .box .btn-buy:hover {
+/*.pricing .box .btn-buy:hover {
   background: #7cc576;
   color: #fff;
 }
@@ -1321,10 +1409,11 @@ section {
   color: #fff;
 }
 
+
 .pricing .recommended .btn-buy:hover {
   background: #61b959;
   border-color: #61b959;
-}
+}*/
 
 .pricing .recommended-badge {
   position: absolute;
@@ -1334,11 +1423,23 @@ section {
   z-index: 1;
   font-size: 12px;
   padding: 4px 25px 6px 25px;
-  background: #eaf6e9;
-  color: #7cc576;
+  background: rgb(228, 182, 14);
+  color: #890381;
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+#btn-buy{
+  animation: pulse 0.7s infinite alternate;
+  background: #ffffff;
+  color: #890381;
+}
+
+#btn-buy:hover{
+  background: #890381;
+  color: #ffffff;
+  border-color: rgb(228, 182, 14);
 }
 
 /*--------------------------------------------------------------
@@ -1358,7 +1459,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #7cc576;
+  font-family: #000000;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1371,6 +1472,7 @@ section {
   position: absolute;
   right: 0;
   top: 0;
+  color: #890381;
 }
 
 .faq .faq-list p {
@@ -1383,11 +1485,11 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #000000;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #7cc576;
+  color: #890381;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1396,6 +1498,10 @@ section {
 
 .faq .faq-list a.collapsed .icon-close {
   display: none;
+}
+
+.section-title span{
+  color: #890381;
 }
 
 /*--------------------------------------------------------------
@@ -1411,11 +1517,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #7cc576;
+  color: rgb(228, 182, 14);
   float: left;
   width: 44px;
   height: 44px;
-  background: #eaf6e9;
+  background: #890381;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1443,8 +1549,8 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #7cc576;
-  color: #fff;
+  background: rgb(228, 182, 14);
+  color: #890381;
 }
 
 .contact .php-email-form {
@@ -1479,6 +1585,8 @@ section {
   padding: 15px;
   font-weight: 600;
 }
+
+
 
 .contact .php-email-form .loading {
   display: none;
@@ -1521,10 +1629,13 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  background: #890381;
+  color:rgb(228, 182, 14);
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #61b959;
+  background: rgb(228, 182, 14);
+  color: #890381;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1618,7 +1729,8 @@ section {
 }
 
 #footer .footer-top .footer-logo img {
-  height: 80px;
+  height: 280px;
+  width: 280px;
 }
 
 #footer .footer-top h3 {
@@ -1722,4 +1834,6 @@ section {
   padding-top: 5px;
 }
 
-
+#fredy{
+  color:rgb(228, 182, 14);
+}
