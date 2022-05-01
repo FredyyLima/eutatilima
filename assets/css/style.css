@@ -390,10 +390,10 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes pulse {
   
   from{
-    transform: scale(0.6,0.6);
+    transform: scale(1,1);
   }
   to{
-    transform: scale(1,1);
+    transform: scale(0.6,0.6);
   }
 }
 
@@ -406,6 +406,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+  #hero img{
+    transform: scale(1,1)
   }
   
 }
