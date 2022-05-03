@@ -1000,20 +1000,20 @@ section {
 }
 
 
-.portfolio-item .bonus1{
+.bonus1{
   font-size: 4rem !important;
   color:#890381;
   text-shadow: #890381 5px 10px 25px;
 }
 
-.portfolio-item .h4-bonus1{
+.h4-bonus1{
   color:#890381;
 }
 
-.portfolio-item .h4-bonus2{
+.h4-bonus2{
   color:rgb(228, 182, 14);
 }
-.portfolio-item .bonus2{
+.bonus2{
   font-size: 4rem !important;
   color:rgb(228, 182, 14);
   text-shadow: rgb(228, 182, 14) 5px 15px 25px;
