@@ -1590,6 +1590,14 @@ section {
   color: #890381;
 }
 
+.phone i{
+  animation: pulse 1s infinite alternate;
+}
+
+.email i{
+  animation: pulse 1s infinite alternate;
+}
+
 .contact .php-email-form {
   width: 100%;
   background: #fff;
