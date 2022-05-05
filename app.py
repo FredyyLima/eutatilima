@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
+import os
 
 
 app = Flask(__name__, template_folder='templates')
@@ -51,4 +52,5 @@ def send():
       return("Lamentamos, mas houve um erro e sua mensagem não foi enviada. Favor atualizar a págia e tentar novamente.")
 
 if __name__ == '__main__':
-   app.run(debug=True)
+      port = int(os.environ.get("PORT", 5000))
+      app.run(host='0.0.0.0', port=port)
