@@ -20,10 +20,11 @@ mail = Mail(app)
 
 
 class Contato:
-   def __init__ (self, name, email, msg):
+   def __init__ (self, name, email, msg, assunto):
       self.nome = name
       self.email = email
       self.mensagem = msg
+      self.subject = assunto
 
 @app.route('/')
 def index():
@@ -36,11 +37,12 @@ def send():
       formContato = Contato(
          request.form['name'],
          request.form['email'],
-         request.form['msg']
+         request.form['msg'],
+         request.form['subject']
       )
 
       msg = Message(
-         subject= 'Contato do seu Portfólio',
+         subject=f'''{formContato.subject}''',
          sender=app.config.get("MAIL_USERNAME"),
          recipients=[app.config.get("MAIL_USERNAME")],
          body=f'''O {formContato.nome} com o email {formContato.email}, te mandou a seguinte mensagem: 
