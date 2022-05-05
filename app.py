@@ -3,6 +3,7 @@ from flask_mail import Mail, Message
 import os
 
 
+
 app = Flask(__name__, template_folder='templates')
 
 mail_settings = {
@@ -10,8 +11,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": 'suporte@eutatilima.com.br',
-    "MAIL_PASSWORD": 'suporte123'
+    "MAIL_USERNAME": "suporte@eutatilima.com.br",
+    "MAIL_PASSWORD": "suporte123"
 }
 
 app.config.update(mail_settings)

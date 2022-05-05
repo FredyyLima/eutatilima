@@ -852,7 +852,14 @@ section {
   display:flex;
   justify-content: center;
   text-align: center;
+}
+
+.portfolio{
   background:url("../img/hero-bg.png");
+  width: 100%;
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
 }
 
 .portfolio #portfolio-flters {
@@ -891,9 +898,12 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-
 }
 
+.portfolio-wrap{
+  width: auto;
+  height: 100%
+}
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -1016,6 +1026,10 @@ section {
   color:#890381;
 }
 
+#portfolio p{
+  color: white;
+}
+
 .h4-bonus2{
   color:rgb(228, 182, 14);
 }
@@ -1025,6 +1039,16 @@ section {
   text-shadow: rgb(228, 182, 14) 5px 15px 25px;
 }
 
+.bonus3{
+  font-size: 4rem !important;
+  color:#890381;
+  text-shadow: #890381 5px 10px 25px;
+  margin-top: 5px;
+}
+
+.h4-bonus3{
+  color:#890381;
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1614,7 +1638,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #d21818;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1777,7 +1801,7 @@ section {
 
 #footer .footer-top .footer-logo img {
   height: 280px;
-  width: 280px;
+  width: 380px;
 }
 
 #footer .footer-top h3 {
