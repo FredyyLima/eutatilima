@@ -606,6 +606,10 @@ section {
   }
 }
 
+#perguntando h2{
+  color: white !important;
+}
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
@@ -1019,7 +1023,7 @@ section {
   font-size: 4rem !important;
   color:#890381;
   text-shadow: #890381 5px 10px 25px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .h4-bonus1{
@@ -1725,6 +1729,10 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#faleConosco{
+  margin-bottom: 15px;
 }
 
 /*--------------------------------------------------------------
