@@ -1,4 +1,3 @@
-from turtle import dot
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
 import os
