@@ -7,7 +7,7 @@ import dotenv
 dotenv.load_dotenv(dotenv.find_dotenv())
 
 username = os.getenv("username")
-senha = os.getenv("senha")
+senha = os.getenv("password")
 
 app = Flask(__name__, template_folder='templates')
 
