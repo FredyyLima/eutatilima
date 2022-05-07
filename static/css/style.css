@@ -491,6 +491,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero img {
     width: 55vw;
     height: 45vh;
+    padding-top: 70px;
   }
 
   #hero .hero-container{
