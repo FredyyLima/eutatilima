@@ -1,12 +1,12 @@
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
 import os
-import dotenv
+#import dotenv
 
-dotenv.load_dotenv(dotenv.find_dotenv())
+#dotenv.load_dotenv(dotenv.find_dotenv())
 
-username = os.getenv("username")
-senha = os.getenv("password")
+#username = os.getenv("username")
+#senha = os.getenv("password")
 
 app = Flask(__name__, template_folder='templates')
 
@@ -15,8 +15,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": username,
-    "MAIL_PASSWORD": senha
+    "MAIL_USERNAME": 'suporte@tatilima.com.br',
+    "MAIL_PASSWORD": 'suporte123'
 }
 
 app.config.update(mail_settings)
