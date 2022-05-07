@@ -434,13 +434,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 626px) and (max-width:1300px){ 
     #hero img {
-      width: 37vw;
+      width: 40vw;
       height: 30vh;
     }
   
     #hero .hero-container{
       display: flex !important;
       justify-content: center !important;
+      padding-bottom: 20px;
+      padding-top: 40px;
     }
 }
 
