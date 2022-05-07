@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 import os
 import dotenv
 
-dotenv.load_dotenv(dotenv.find_dotenv())
+dotenv.load_dotenv(dotenv.find_dotenv(".env"))
 
 username = os.getenv("username")
 senha = os.getenv("password")
