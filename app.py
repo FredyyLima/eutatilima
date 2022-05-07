@@ -1,12 +1,12 @@
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
 import os
-#import dotenv
+import dotenv
 
-#dotenv.load_dotenv(dotenv.find_dotenv())
+dotenv.load_dotenv(dotenv.find_dotenv())
 
-#username = os.getenv("username")
-#senha = os.getenv("password")
+username = os.getenv("username")
+senha = os.getenv("password")
 
 app = Flask(__name__, template_folder='templates')
 
