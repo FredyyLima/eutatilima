@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen and (min-width: 1101px) { 
+@media only screen and (min-width: 1101px) and (max-width: 1250px){ 
   #hero img {
     width: 52vw;
     height: 47vh;
@@ -501,6 +501,20 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center !important;
     padding-bottom: 0px;
     margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 1251px){ 
+  #hero img {
+    width: 52vw;
+    height: 47vh;
+  }
+
+  #hero .hero-container{
+    display: flex !important;
+    justify-content: center !important;
+    padding-bottom: 60px;
+    margin-bottom: 15px;
   }
 }
 
