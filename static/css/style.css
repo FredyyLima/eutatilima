@@ -434,8 +434,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 626px) and (max-width:1300px){ 
     #hero img {
-      width: 70vw;
-      height: 42vh;
+      width: 37vw;
+      height: 30vh;
     }
   
     #hero .hero-container{
