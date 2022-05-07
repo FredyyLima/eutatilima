@@ -15,8 +15,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": 'suporte@tatilima.com.br',
-    "MAIL_PASSWORD": 'suporte123'
+    "MAIL_USERNAME": username,
+    "MAIL_PASSWORD": senha
 }
 
 app.config.update(mail_settings)
