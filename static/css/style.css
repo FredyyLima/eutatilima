@@ -491,14 +491,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 1101px) { 
   #hero img {
-    width: 55vw;
-    height: 45vh;
-    padding-top: 70px;
+    width: 52vw;
+    height: 47vh;
+    padding-top: 0px;
   }
 
   #hero .hero-container{
     display: flex !important;
     justify-content: center !important;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
   }
 }
 
