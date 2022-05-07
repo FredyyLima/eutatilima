@@ -434,6 +434,75 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
+@media only screen and (min-width: 626px) and (max-width: 1300px) { 
+    #hero img {
+      width: 70vw;
+      height: 42vh;
+    }
+  
+    #hero .hero-container{
+      display: flex !important;
+      justify-content: center !important;
+    }
+}
+
+@media only screen and (min-width: 334px) and (max-width: 625px) {
+  #hero img {
+    width: 370px;
+    height: 222px;
+  }
+
+  #hero .hero-container{
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+    #hero .hero-container{
+    display: flex !important;
+    justify-content: center !important;
+    padding-bottom: 0px;
+    padding-top: 90px;
+    line-height: 0.9rem;
+  }
+
+  #hero h1 h2{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 333px) {
+  #hero img {
+    width: 270px;
+    height: 192px;
+  }
+
+  #hero .hero-container{
+    display: flex !important;
+    justify-content: center !important;
+    padding-bottom: 0px;
+    padding-top: 80px;
+    line-height: 1rem;
+  }
+
+  #hero h1 h2{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1301px) { 
+  #hero img {
+    width: 55vw;
+    height: 45vh;
+  }
+
+  #hero .hero-container{
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -498,6 +567,38 @@ section {
   text-align:center;
 }
 
+.image{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 767px){
+  #about img{
+    width: 100vw;
+    height: 60vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #about img{
+    width: 80vw;
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px){
+  #about img{
+    width: 60vw;
+    height: 70vh;
+  }
+}
+
+@media only screen and (min-width: 1101px) {
+  #about img{
+    width: 50vw;
+    height: 86vh;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -654,6 +755,27 @@ section {
 }
 #imgTati2{
   border-radius: 80px;
+}
+
+@media only screen and (min-width: 992px){
+  #imgTati2{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 779px) and (max-width: 991px){
+  #imgTati2{
+    width: 60vw;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 778px){
+  #imgTati2{
+    width: 95vw;
+    height: 100vh;
+  }
 }
 .why-us .accordion-list {
   padding: 0 100px 60px 100px;
@@ -1053,6 +1175,21 @@ section {
 .h4-bonus3{
   color:#890381;
 }
+
+@media only screen and (min-width:992px){
+  .bonus2{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #bonus{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1199,12 +1336,35 @@ section {
   background-color: rgb(228, 182, 14);
 }
 
-@media (min-width: 992px) {
-  .testimonials .testimonial-item p {
-    width: 80%;
+@media only screen and (min-width: 601px) and (max-width: 700px){
+  .testimonials .testimonial-item .testimonial-img {
+    width: 50vw;
   }
 }
 
+@media only screen and (min-width: 701px) and (max-width: 800px){
+  .testimonials .testimonial-item .testimonial-img {
+    width: 45vw;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 900px){
+  .testimonials .testimonial-item .testimonial-img {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px){
+  .testimonials .testimonial-item .testimonial-img {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1001px){
+  .testimonials .testimonial-item .testimonial-img {
+    width: 25vw;
+  }
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -1509,6 +1669,27 @@ section {
   border-color: rgb(228, 182, 14);
 }
 
+.pricing .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width:200px) and (max-width: 900px){
+  .box{
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:901px) {
+  .box{
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
