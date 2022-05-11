@@ -34,6 +34,9 @@ class Contato:
 def index():
    return render_template('index.ejs')
 
+@app.route('/video')
+def video():
+   return render_template('video.ejs')
 
 @app.route('/send', methods=['GET', 'POST'])
 def send():

@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
+  box-sizing: content-box !important;
 }
 
 a {
@@ -341,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background: url("../img/hero-bg.png");
   position: relative;
 }
@@ -356,8 +357,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 100px 15px;
-  margin-bottom: 15px;
+  vertical-align: middle;
 }
 
 #hero .hero-logo {
@@ -398,6 +398,9 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: ease;
 }
 
+#hero iframe{
+  pointer-events: none;
+}
 @keyframes pulse {
   
   from{
@@ -414,13 +417,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #890381;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+  #hero img {
+    width: 30vw;
+    height: 20vh;
+  }
 }
 
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -441,8 +448,12 @@ h1, h2, h3, h4, h5, h6 {
     #hero .hero-container{
       display: flex !important;
       justify-content: center !important;
-      padding-bottom: 20px;
-      padding-top: 40px;
+
+    }
+
+    #hero .video-box{
+      width: 90vw;
+      padding-left: 20px;
     }
 }
 
@@ -461,13 +472,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex !important;
     justify-content: center !important;
     padding-bottom: 0px;
-    padding-top: 90px;
     line-height: 0.9rem;
   }
 
   #hero h1 h2{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
+
+  #hero .video-box{
+    width: 95vw;
+    padding-left: 7px;
+    pointer-events: none;
+  }
+
+ 
 }
 
 @media only screen and (min-width: 250px) and (max-width: 333px) {
@@ -480,12 +498,16 @@ h1, h2, h3, h4, h5, h6 {
     display: flex !important;
     justify-content: center !important;
     padding-bottom: 0px;
-    padding-top: 80px;
-    line-height: 1rem;
+    line-height: 1.0rem;
   }
 
   #hero h1 h2{
     font-size: 1rem;
+  }
+
+  #hero .video-box{
+    width: 90vw;
+    padding-left: 10px;
   }
 }
 
@@ -527,7 +549,7 @@ section {
 }
 
 .section-bg {
-  background-color: whitesmoke;
+  background: url("../img/hero-bg.png");
 }
 
 .section-title {
@@ -755,7 +777,9 @@ section {
   color: #555555;
 }
 
-.why-us .video-box {
+#hero .video-box {
+  display: flex;
+  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -871,21 +895,19 @@ section {
   text-align: center;
 }
 
-.why-us .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#7cc576 50%, rgba(124, 197, 118, 0.4) 52%);
-  border-radius: 50%;
+#hero .play-btn {
+  width: 720px;
+  height: 480px;
+ 
   display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
+  position: relative;
+
   overflow: hidden;
 }
 
-.why-us .play-btn::after {
+#hero .play-btn::after {
   content: '';
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
@@ -898,11 +920,11 @@ section {
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.why-us .play-btn::before {
+#hero .play-btn::before {
   content: '';
-  position: absolute;
-  width: 120px;
-  height: 120px;
+  position: relative;
+  width: 720px;
+  height: 480px;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation: pulsate-btn 2s;
@@ -914,19 +936,18 @@ section {
   -webkit-animation-timing-function: steps;
   animation-timing-function: steps;
   opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(124, 197, 118, 0.7);
-  top: -15%;
-  left: -15%;
+  border: 5px solid #f01212f4;
+  top: 50%;
+  left: 50%;
   background: rgba(198, 16, 0, 0);
 }
 
-.why-us .play-btn:hover::after {
+/*#hero .play-btn:hover::after {
   border-left: 15px solid #7cc576;
   transform: scale(20);
-}
+}*/
 
-.why-us .play-btn:hover::before {
+#hero .play-btn:hover::before {
   content: '';
   position: absolute;
   left: 50%;
