@@ -370,16 +370,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
-  color: #fff;
+  color: rgb(228, 182, 14);
 
 }
 
 #hero h2 {
-  color: #aeaeae;
+  color: #ffffff;
   margin-bottom: 30px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+#hero h3{
+  color: #ffffff;
+}
+
+#hero h3 span{
+  color:#890381;
 }
 
 #hero .btn-get-started {
@@ -398,9 +406,10 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: ease;
 }
 
-#hero iframe{
+/*#hero iframe{
   pointer-events: none;
-}
+}*/
+
 @keyframes pulse {
   
   from{
@@ -482,7 +491,6 @@ h1, h2, h3, h4, h5, h6 {
   #hero .video-box{
     width: 95vw;
     padding-left: 7px;
-    pointer-events: none;
   }
 
  
@@ -897,7 +905,7 @@ section {
 
 #hero .play-btn {
   width: 720px;
-  height: 480px;
+  height: 460px;
  
   display: block;
   position: relative;
@@ -2138,3 +2146,4 @@ section {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
