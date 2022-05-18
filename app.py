@@ -37,7 +37,7 @@ def index():
 
 @app.route('/video')
 def video():
-   return render_template('video.ejs')
+   return render_template('index.ejs')
 
 @app.route('/send', methods=['GET', 'POST'])
 def send():
