@@ -54,7 +54,7 @@ def send():
       msg = Message(
          subject=f'''{formContato.subject}''',
          sender=app.config.get("MAIL_USERNAME"),
-         recipients=[app.config.get("MAIL_USERNAME")],
+         recipients=[app.config.get("MAIL_USERNAME","MAIL_PASSWORD")],
          body=f'''O {formContato.nome} com o email {formContato.email} e número de telefone {formContato.telefone} , te mandou a seguinte mensagem: 
          
                {formContato.mensagem}''' 
