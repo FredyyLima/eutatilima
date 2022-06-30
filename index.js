@@ -19,6 +19,9 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/video", (req, res) => {
+    res.render("video");
+});
 
 app.post("/send", async (req,res) => {
 
