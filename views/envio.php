@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '../forms/vendor/autoload.php';
 
-if(isset($_POST['Enviar menssagem'])){
+if(isset($_POST['enviar'])){
 
 $mail = new PHPMailer(true);
 
