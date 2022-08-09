@@ -54,6 +54,8 @@ O valor do IDADE É SÓ 1 NÚMERO é 1.297,00 REAIS, podendo ser parcelado em at
 
 Caso surja uma vaga, o que você acredita que tenha que acontecer para que, daqui a 6 meses, a experiência da jornada IDADE É SÓ 1 NÚMERO tenha valido a pena?:
     ".$_POST[acreditar]."
+
+    Esse e-mail foi enviado via PHP
     "
 
     $mail->Body    = $body;
