@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '../forms/vendor/autoload.php';
+require 'vendor/autoload.php';
 
 if(isset($_POST['enviar'])){
 
@@ -13,7 +13,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Configurações do servidor 
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
     $mail->isSMTP();                                            
     $mail->Host       = 'mail.eutatilima.com.br';                    
     $mail->SMTPAuth   = true;                                   
@@ -25,35 +25,35 @@ try {
     $mail->Port       = 465;           
 
     //Recipients
-    $mail->setFrom($_POST[email], 'Mailer');
-    $mail->addAddress($_POST[email], $_POST[name]);              
+    $mail->setFrom($_POST['email'], 'Mailer');
+    $mail->addAddress($_POST['email'], $_POST['name']);              
     $mail->addReplyTo('suporte@eutatilima.com.br', 'Suporte Tati Lima');
     $mail->isHTML(true);                             
     $mail->Subject = 'Lista de espera';
     
     $body = "
 Nome: ".
-    $_POST[name] ."
+    $_POST['name'] ."
 
 Whatsapp: ".
-    $_POST[phone] ."
+    $_POST['phone'] ."
 
 Instagram:
-    @".$_POST[insta]."
+    @".$_POST['insta']."
 
 A Jornada IDADE É SÓ 1 NÚMERO é um treinamento de 16 semanas pra te ensinar a desenvolver força, coragem, disciplina, autoconfiança e uma nova postura diante da vida. Pra que você comece a transformar sua lista de desejos em realidade, um a um, dia após dia, independente da sua idade ou se hoje a sua vida está muito dura e bagunçada. 
 
 Por que você acredita que a Jornada Idade é só 1 Número será a oportunidade ideal para você?: 
-    ".$_POST[oportunidade]."
+    ".$_POST['oportunidade']."
     
 Caso abra vagas, porque uma delas deveria ser sua?:
-    ".$_POST[vaga]."
+    ".$_POST['vaga']."
     
 O valor do IDADE É SÓ 1 NÚMERO é 1.297,00 REAIS, podendo ser parcelado em até 12 vezes no cartão (com juros). Você tem esse valor para investir em você?:
-    ".$_POST[valor]."
+    ".$_POST['valor']."
 
 Caso surja uma vaga, o que você acredita que tenha que acontecer para que, daqui a 6 meses, a experiência da jornada IDADE É SÓ 1 NÚMERO tenha valido a pena?:
-    ".$_POST[acreditar]."
+    ".$_POST['acreditar']."
 
     Esse e-mail foi enviado via PHP
     "
