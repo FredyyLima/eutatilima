@@ -13,7 +13,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Configurações do servidor 
-    // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
     $mail->isSMTP();                                            
     $mail->Host       = 'mail.eutatilima.com.br';                    
     $mail->SMTPAuth   = true;                                   
