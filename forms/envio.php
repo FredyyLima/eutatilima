@@ -72,10 +72,10 @@ Caso surja uma vaga, o que você acredita que tenha que acontecer para que, daqu
 
     $mail->send();
     echo 'Email enviado com sucesso';
-} catch (Exception $e) {
-    echo "Erro ao enviar o e-mail: {$mail->ErrorInfo}";
-}
+    } catch (Exception $e) {
+        echo "Erro ao enviar o e-mail: {$mail->ErrorInfo}";
+    }
 
-}else {
+} else {
     echo "Erro ao enviar e-mail, acesso não foi feito via formulário";
 };
